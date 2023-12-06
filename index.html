@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou - Mini Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-container">
+            <h1>Welcome To Kalkulator Segitiga</h1>
+        <p>Hai Sobat, Selamat datang di Kalkulator Hitung Segitiga <br> Sebuah apps sederhana yang berfungsi untuk menghitung nilai Luas dan Keliling bangun datar</p>
+        <a href="#header-luas"><button class="luas-segitiga">Luas Segitiga</button></a>
+        <a href="#header-keliling"><button class="keliling-segitiga">Keliling Segitiga</button></a>
+        </div>
+    </header>
+   
+    <!-- Main -->
+    <main>
+        <!-- Header Segitiga Luas -->
+        <div  id="luas">
+            <h2 id="header-luas">Luas Segitiga</h2>
+        </div> 
+
+        <div class="rumus-container">
+            <h3>Rumus Luas Segitiga</h3>
+            <aside>
+                <img src="assets/luas-segitiga.png" alt="Rumus Luas Segitiga" width="650px">
+            </aside>
+        </div>
+        <hr>
+
+        <!-- Kalkulator Luas Segitiga -->
+     <div class="calculator-triangle1">
+        <h2>Hitung Luas Segitiga</h2>
+        <label for="unit">Satuan:</label>
+        <select id="unit">
+            <option value="cm">Centimeter (cm)</option>
+            <option value="m">Meter (m)</option>
+        </select>
+        <br>
+        <label for="base">Alas:</label>
+        <input type="number" id="base" placeholder="Masukkan panjang alas" min="0" max="15">
+    
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height" placeholder="Masukkan tinggi" min="0" max="15">
+        
+        <div class="button-container">
+        <button onclick="calculateLuas()" class="hitung">Hitung Luas</button>
+        <button onclick="resetResult()" class="reset">Reset</button>
+        </div>        
+        <div id="resultLuas"></div>
+     </div>
+     
+     <!-- Header Segitiga Keliling -->
+     <div id="keliling">
+        <h2 id="header-keliling">Keliling Segitiga</h2>
+     </div>
+     <div class="rumus-container">
+        <h3>Rumus Keliling Segitiga</h3>
+        <aside>
+            <img src="assets/keliling-segitiga.png" alt="Rumus Luas Segitiga" width="650px">
+        </aside>
+     </div>
+     <hr>
+
+     <!-- Kalkulator Keliling Segitiga -->
+     <div class="calculator-triangle2">
+        <h2 id="header-keliling">Hitung Keliling Segitiga</h2>
+        <label for="unitKeliling">Satuan:</label>
+        <select id="unitKeliling">
+            <option value="cm">Centimeter (cm)</option>
+            <option value="m">Meter (m)</option>
+        </select>
+        <br>
+        <label for="sisi1">Sisi 1:</label>
+        <input type="number" id="sisi1" placeholder="Masukkan Sisi Pertama">
+    
+        <label for="sisi2">Sisi 2:</label>
+        <input type="number" id="sisi2" placeholder="Masukkan Sisi Kedua">
+        
+        <label for="sisi3">Sisi 3:</label>
+        <input type="number" id="sisi3" placeholder="Masukkan Sisi Ketiga">
+
+        <div class="button-container">
+        <button onclick="calculateKeliling()" class="hitung">Hitung Keliling</button>
+        <button onclick="resetResult()" class="reset">Reset</button>
+        </div>
+        <div id="resultKeliling"></div>
+     </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://instagram.com/_rifqi.az" target="_blank" rel=""><img src="assets/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://t.me/rifqiakh_za" target="_blank" rel=""><img src="assets/telegram-icon.png" alt="Telegram"></a>
+                <a href="https://www.linkedin.com/in/rifqi-akhmad-zakaria-485201262/" target="_blank" rel=""><img src="assets/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 By Rifqi Az. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
